@@ -18,5 +18,6 @@ Here is how you make a test deployment::
     $ cd lastuser
     $ cp lastuserapp/settings-sample.py lastuserapp/settings.py
     $ open lastuserapp/settings.py # Customize this file as needed
+    $ pip install -r < requirements.txt # Install required libraries
     $ python setup.py develop
     $ python lastuserapp/website.py
