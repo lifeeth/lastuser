@@ -14,6 +14,8 @@ requires = [
     'Flask-OpenID',
     'Flask-OAuth',
     'Markdown',
+    'Flask-Assets',
+    'Flask-Mail',
     ]
 
 setup(name='lastuserapp',

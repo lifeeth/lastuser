@@ -5,4 +5,5 @@ Flask-WTF
 Flask-OpenID
 Flask-OAuth
 Markdown
-
+Flask-Assets
+Flask-Mail
