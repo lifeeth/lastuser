@@ -199,7 +199,7 @@ class UserClientPermissions(db.Model, BaseMixin):
     client = db.relationship(Client, primaryjoin=client_id == Client.id,
         backref=db.backref('permissions', cascade="all, delete-orphan"))
     # The permissions as a string of tokens
-    permissions = db.Column(db.Unicode(250), default='', nullable=False)
+    permissions = db.Column(db.Unicode(250), default=None, nullable=False)
 
     # Only one assignment per user and client
     # TODO: Also define context for permission:

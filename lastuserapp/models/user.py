@@ -9,7 +9,7 @@ from lastuserapp.utils import newid, newsecret, newpin
 class User(db.Model, BaseMixin):
     __tablename__ = 'user'
     userid = db.Column(db.String(22), unique=True, nullable=False, default=newid)
-    fullname = db.Column(db.Unicode(80), default='', nullable=False)
+    fullname = db.Column(db.Unicode(80), default=None, nullable=False)
     username = db.Column(db.Unicode(80), unique=True, nullable=True)
     pw_hash = db.Column(db.String(80), nullable=True)
     description = db.Column(db.Text, default='', nullable=False)
